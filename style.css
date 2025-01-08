@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+ @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
 
 :root {
   --primary: #6366f1;
@@ -51,19 +51,29 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 /* Styling for the profile image */
 .profile-image {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Ensures the image fills the container */
+  object-fit: cover; 
 }
 .profile-image-container:hover,
 .profile-image-container:active {
-    transform: scale(1.5); /* Enlarges the image */
+    transform: scale(1.5); 
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); /* Adds a stronger shadow */
     z-index: 10; /* Ensures it appears above other elements */
+}
+.profile-image-container .profile-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 50%; /* Optional: Makes the profile image circular */
+}
+
+.profile-image-container .profile-image:hover {
+  transform: scale(1.1); /* Enlarge the image slightly */
+  box-shadow: 0 4px 15px rgba(255, 0, 0, 0.6); /* Red box shadow */
 }
 
 /* Responsive adjustments for smaller screens */
