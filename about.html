@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: rgb(229, 235, 235);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background: linear-gradient(120deg, rgb(103, 4, 103), rgb(39, 39, 101), rgb(196, 178, 140), rgb(232, 110, 10));
+            background-size: 400% 400%;
+            animation: gradientBackground 10s ease infinite;
+        }
+
+        @keyframes gradientBackground {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
+
+        header {
+            background: linear-gradient(90deg, navy, purple);
+            color: #f1f3f5;
+            padding: 0.5rem 0;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        h1 {
+            font-size: 1.8rem;
+            margin: 0;
+        }
+
+        p {
+            padding: 0 20px;
+            margin: 10px auto;
+            max-width: 800px;
+            font-size: 1.1rem;
+            color: #e0e0e0;
+            animation: fadeUp 1.5s ease-in-out;
+        }
+
+        @keyframes fadeUp {
+            from {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .skills {
+            background: rgb(176, 182, 243); /* Changed background to white */
+            margin: 20px auto;
+            padding: 15px;
+            max-width: 600px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: box-shadow 0.3s ease;
+        }
+
+        .skills:hover {
+            box-shadow: 0 6px 12px rgba(255, 0, 0, 0.8); /* Red box shadow on hover */
+        }
+        
+
+        .skills h2 {
+            text-align: center;
+            color: #1e3a8a;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 10px;
+        }
+
+        .skills ul li {
+            font-size: 1rem;
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+            color: #333;
+        }
+
+        .skills ul li i {
+            background-color: #1e3a8a;
+            color: #ffffff;
+            padding: 8px;
+            border-radius: 50%;
+            margin-right: 10px;
+            font-size: 1.2rem;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .skills ul li i:hover {
+            transform: scale(1.2);
+            background-color: #6366f1;
+            color: #ffffff;
+        }
+
+        .cv-link {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .cv-link a {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #1e40af;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .cv-link a:hover {
+            background: #2563eb;
+            transform: scale(1.1);
+        }
+
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #1e3a8a;
+            color: #c7d2fe;
+            margin-top: 20px;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>About Me</h1>
+</header>
+
+<p>
+    Hi, I’m <strong>Mukund Kumar Pandey</strong>, an enthusiastic and driven fresher with a strong academic background in computer science and a passion for software development. 
+    Currently, I am pursuing a <strong>Bachelor of Technology in Computer Science</strong> and have a CGPA of <strong>8.6</strong>.
+    My academic journey has provided me with a deep understanding of programming, database management, and web development, which I’m excited to apply in real-world projects.
+</p>
+
+<div class="skills">
+    <h2>Technical Skills</h2>
+    <ul>
+        <li><i class="fab fa-html5"></i> HTML</li>
+        <li><i class="fab fa-css3-alt"></i> CSS</li>
+        <li><i class="fab fa-js-square"></i> JavaScript</li>
+        <li><i class="fab fa-react"></i> React.js</li>
+        <li><i class="fas fa-code"></i> Core Java</li>
+        <li><i class="fas fa-server"></i> Servlets</li>
+        <li><i class="fas fa-file-code"></i> JSP</li>
+        <li><i class="fas fa-database"></i> JDBC</li>
+        <li><i class="fas fa-database"></i> MySQL</li>
+        <li><i class="fas fa-cogs"></i> Hibernate</li>
+        <li><i class="fas fa-cogs"></i> Spring MVC</li>
+        <li><i class="fas fa-code-branch"></i> Spring Boot</li>
+        <li><i class="fas fa-exchange-alt"></i> REST</li>
+        <li><i class="fas fa-toolbox"></i> Postman</li>
+    </ul>
+</div>
+
+<p>
+    During my studies, I worked on several academic projects that allowed me to apply these skills, strengthen my problem-solving abilities, and develop a knack for innovative thinking. 
+</p>
+
+<div class="cv-link">
+    <a href="Mukund.resume.pdf" target="_blank" download>Download My CV</a>
+</div>
+
+ 
+
+</body>
+</html>
